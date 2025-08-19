@@ -1,0 +1,180 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+/** Ionic CSS Variables **/
+:root {
+  /** Government Primary Colors (Professional Navy Blue) **/
+  --ion-color-primary: #1e3a8a;
+  --ion-color-primary-rgb: 30, 58, 138;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1a327a;
+  --ion-color-primary-tint: #3548a3;
+
+  /** Government Secondary (Professional Gray) **/
+  --ion-color-secondary: #475569;
+  --ion-color-secondary-rgb: 71, 85, 105;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #3e4a5c;
+  --ion-color-secondary-tint: #596579;
+
+  /** Government Tertiary (Professional Gold) **/
+  --ion-color-tertiary: #d97706;
+  --ion-color-tertiary-rgb: 217, 119, 6;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #bf6905;
+  --ion-color-tertiary-tint: #dc8416;
+
+  /** success (Professional Blue-Green) **/
+  --ion-color-success: #0f766e;
+  --ion-color-success-rgb: 15, 118, 110;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0d6860;
+  --ion-color-success-tint: #27847d;
+
+  /** warning (Professional Amber) **/
+  --ion-color-warning: #f59e0b;
+  --ion-color-warning-rgb: 245, 158, 11;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #d88b0a;
+  --ion-color-warning-tint: #f6a723;
+
+  /** danger (Professional Red) **/
+  --ion-color-danger: #dc2626;
+  --ion-color-danger-rgb: 220, 38, 38;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #c12121;
+  --ion-color-danger-tint: #e03c3c;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 36, 40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+}
+
+html {
+  /* For more information on dynamic font scaling, visit the documentation: 
+  https://ionicframework.com/docs/layout/dynamic-font-scaling */
+  --ion-dynamic-font: var(--ion-default-dynamic-font);
+}
+
+/* Professional Government Theme Variables */
+:root {
+  /* Government Official Colors */
+  --gov-navy: #1e3a8a;
+  --gov-slate: #475569;
+  --gov-gold: #d97706;
+  --gov-teal: #0f766e;
+  --gov-amber: #f59e0b;
+  --gov-red: #dc2626;
+  
+  /* Professional Gradients */
+  --gov-gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  --gov-gradient-secondary: linear-gradient(135deg, #475569 0%, #64748b 100%);
+  
+  /* Text Colors */
+  --gov-text-primary: #1e293b;
+  --gov-text-secondary: #64748b;
+  --gov-text-accent: #1e3a8a;
+  
+  /* Background Colors */
+  --gov-bg-primary: #ffffff;
+  --gov-bg-secondary: #f8fafc;
+  --gov-bg-accent: #f1f5f9;
+  
+  /* Shadow Styles */
+  --gov-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --gov-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --gov-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  /* Border Radius */
+  --gov-radius-sm: 4px;
+  --gov-radius-md: 8px;
+  --gov-radius-lg: 12px;
+}
+
+/* Global Professional Styling */
+body {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--gov-bg-secondary);
+  color: var(--gov-text-primary);
+}
+
+/* Professional Ionic Overrides */
+ion-app {
+  background: var(--gov-bg-secondary);
+}
+
+ion-content {
+  --background: var(--gov-bg-secondary);
+}
+
+ion-page {
+  background: var(--gov-bg-secondary);
+}
+
+/* Professional Button Styling */
+ion-button {
+  --border-radius: var(--gov-radius-md);
+  --box-shadow: var(--gov-shadow-sm);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+ion-button:hover {
+  --box-shadow: var(--gov-shadow-md);
+  transform: translateY(-1px);
+}
+
+ion-button:active {
+  --box-shadow: var(--gov-shadow-sm);
+  transform: translateY(0);
+}
+
+/* Professional Card Styling */
+ion-card {
+  --background: var(--gov-bg-primary);
+  --border-radius: var(--gov-radius-lg);
+  --box-shadow: var(--gov-shadow-md);
+  border: 1px solid rgba(71, 85, 105, 0.1);
+}
+
+/* Professional Input Styling */
+ion-input, ion-textarea, ion-select {
+  --background: var(--gov-bg-primary);
+  --border-radius: var(--gov-radius-md);
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+/* Professional List Styling */
+ion-list {
+  background: var(--gov-bg-primary);
+  border-radius: var(--gov-radius-lg);
+  box-shadow: var(--gov-shadow-sm);
+}
