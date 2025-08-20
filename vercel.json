@@ -2,10 +2,5 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-  "build": {
-    "env": {
-      "NODE_VERSION": "18"
-    }
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
